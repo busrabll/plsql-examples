@@ -11,9 +11,9 @@ begin
     end if;
     
     if v_hedef_sonucu then
-        dbms_output.put_line('Müşteri hedefine ulaşıldı, tebrikler :)');
+        dbms_output.put_line('Müşteri hedefine ulaşıldı');
     else 
-        dbms_output.put_line('Biraz daha gayret lütfen!');
+        dbms_output.put_line('Müşteri hedefine ulaşılamadı');
     end if;
   
 end;

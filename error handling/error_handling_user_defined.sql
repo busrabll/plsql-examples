@@ -12,12 +12,12 @@ begin
     if v_car_price > v_budget then 
         raise e_price_exceed;
     else
-        dbms_output.put_line('Tebirkler... Bu arabayı alabilirsiniz :)');
+        dbms_output.put_line('Tebrikler');
     end if;
 
     --Kredi işlemleri...
     
     exception 
         when e_price_exceed then
-            dbms_output.put_line('Üzgünüz! Bu arabanın fiyatı bütçenizi aşıyor :(');
+            dbms_output.put_line('Bu arabanın fiyatı bütçenizi aşıyor');
 end;
